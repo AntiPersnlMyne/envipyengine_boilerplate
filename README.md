@@ -1,5 +1,5 @@
 # envipyengine_boilerplate
-Boilerplate abstraction class for the Python interface of ENVI (envipyengine) by nv5geospatialsoftware
+Boilerplate abstraction class for the Python interface of ENVI (envipyengine) by nv5geospatialsoftware.
 
 ## Motivation
 During my undergrad senior project, I was motivated to utilize ENVI software to aid with processing historical manuscripts. There are two main options for using ENVI headless: 1) IDL 2) Python. NV5 provides their own Python library - ENVI Py Engine - which is conveinent. 
@@ -7,13 +7,15 @@ During my undergrad senior project, I was motivated to utilize ENVI software to 
 What is NOT conveinent is how minimal the documentation for the library is:
 `https://envi-py-engine.readthedocs.io/en/latest/envipyengine_api.html`
 
+**However**, one isn't not _supposed_ to use this library as a standalone entity. Its intended purpose is as a tool being used by the `ENVI Modeler` (a feature within ENVI itself) to convert ENVI "block code" into a Python executable. Should you still desire to use this library manually, carry on.
+
 ## Contents
 This repository includes two main objects:
 1) An approachable guide on how to use ENVI Py Engine, for those unfamiliar with IDL and/or ENVI
-2) A boilerplate class - Task - that provides an easy(er) interface to the Envi Py Engine
+2) A boilerplate class - named `Task` - that provides an easy(er) interface to the Envi Py Engine
 
 ## Disclaimer
-There is a very minimal chance this will be updated past ver. `1.0`. The ENVI Py Engine has been updated recently (as of writing, 2025), but contains fractional ENVI capabilities, compared to pure IDL routines. It is the author's recommendation to use IDL via Python subroutines instead.
+There is a very minimal chance this will be updated past ver. `1.0`. The ENVI Py Engine has been updated recently (as of writing, 2025), but contains fractional ENVI capabilities, compared to pure IDL routines. It is the author's recommendation to use IDL via `idlpy` (a complimentary IDL-Python bridge included with your (probable) installation of ENVI). Or use the Envi Modeler from within ENVI itself.
 
 
 
